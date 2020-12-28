@@ -82,7 +82,7 @@ chmod 664 /home/pi/RaspberryIPCamera/secret/RaspberryIPCamera.secret
 # Install all UV4L components
 ########################################################################################
 # Add the supplier's repository key to our key database
-curl http://www.linux-projects.org/listing/uv4l_repo/lpkey.asc | sudo apt-key add -
+curl --location http://www.linux-projects.org/listing/uv4l_repo/lpkey.asc | sudo apt-key add -
 # Open /etc/apt/sources.list in Nano
 sudo nano /etc/apt/sources.list
 # PASTE INTO /etc/apt/sources.list below second line, then save and exit
